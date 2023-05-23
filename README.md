@@ -1,1 +1,1 @@
-# eurosat
+# EuroSat
