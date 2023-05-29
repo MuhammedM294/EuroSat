@@ -1,6 +1,6 @@
 # EuroSat
 ## Project Overview
-In this project, a deep Convolutional Neural Network (CNNs) is built with PyTorch to classifiy Land use and cover dataset from Sentinel-2 satellite images.
+In this project, a deep Convolutional Neural Network (CNNs) is built with PyTorch to classify Land use and cover dataset from Sentinel-2 satellite images.
 
 
 ![](https://raw.githubusercontent.com/phelber/EuroSAT/master/eurosat_overview_small.jpg)
