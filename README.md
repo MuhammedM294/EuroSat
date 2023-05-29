@@ -86,5 +86,5 @@ The first training is performed using:
                             
                             
 9. Results 
-     ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/59d6a41e-f30c-448b-88f7-59d3a8a1a7bf)
+     ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/9ad8985b-e28b-4534-811a-e17c0b098195)
                     
