@@ -14,9 +14,12 @@ This dataset consists out of 10 classes with in total 27,000 labeled and geo-ref
 2. [Multi-spectral](https://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
 
 ## Workflow
-#### 1. Import the Relevant Packages
-#### 2. Define a Dataset Class to Prepare the Images and Corresponding Labels
-#### To be continuted ..
+#### 1. Import the relevant packages.
+#### 2. Define a custom dataset class for the satellite Images.
+#### 3. Builds a pre-trained VGG19 model with a custom classifier for image classification, select the Loss Function and the optimizer for training the model.
+#### 4. Build a function to performs a single training iteration on every batch of data, and other function to calculates the accuracy of the model's predictions on a batch of data.
+#### 5. Run a for training loop that runs for a specified number of epochs to iterate over the training and test dataset loaders, calculates the training loss, accuracy, and prints their values for each epoch.
+#### 6. Visualize the training and test loss values as well as the training and test accuracy values over increasing epochs.
 
 ## Training
 ### The First Training
