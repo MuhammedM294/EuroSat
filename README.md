@@ -13,6 +13,11 @@ This dataset consists out of 10 classes with in total 27,000 labeled and geo-ref
 1. [RGB](https://madm.dfki.de/files/sentinel/EuroSAT.zip) (**The employed one in this project**)
 2. [Multi-spectral](https://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
 
+## Workflow
+#### 1. Import the Relevant Packages
+#### 2. Define a Dataset Class to Prepare the Images and Corresponding Labels
+#### To be continuted ..
+
 ## Training
 ### The First Training
 The first training is performed using:
