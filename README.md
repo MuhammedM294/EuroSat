@@ -25,12 +25,14 @@ The dataset comprises 27,000 labeled and geo-referenced images, divided into 10 
 ### The First Training
 The first training is performed using:
 1. Model : VGG19 
-2. Apply Dropout: True
-3. Learning Rate : 0.001
-4. Number of training epochs: 25
-5. Traing Data Size: 22000
-6. Test Data Size: 5000
-7. Model Summary: 
+2. Loss Function:  Cross-Entropy 
+3. Optimizer: Adam
+4. Learning Rate: 0.001
+5. Apply Dropout: True
+6. Number of training epochs: 25
+7. Traing Data Size: 22000
+8. Test Data Size: 5000
+9. Model Summary: 
 
             Layer (type:depth-idx)                   Output Shape              Param 
             ==========================================================================================
