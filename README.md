@@ -24,7 +24,7 @@ The dataset comprises 27,000 labeled and geo-referenced images, divided into 10 
 ## Training
 ### The First Training
 The first training is performed using:
-1. Model : VGG19 
+1. Model : The Pretrained VGG19 Model 
 2. Loss Function:  Cross-Entropy 
 3. Optimizer: Adam
 4. Learning Rate: 0.001
