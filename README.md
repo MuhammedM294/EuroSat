@@ -97,4 +97,12 @@ The first training is performed using:
                             
 9. Results 
      ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/9ad8985b-e28b-4534-811a-e17c0b098195)
+     
+
+### The Second Training
+The second training is performed using:
+9. Results
+   ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/af5c175d-28ba-4aaa-a5d1-919997790746)
+
+
                     
