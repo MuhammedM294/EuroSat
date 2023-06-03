@@ -198,8 +198,11 @@ To train the CNN from scratch, follow these steps:
             ==========================================================================================
 
 
-11. Results
+11. Results (in case of training over 25 epochs)
    ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/af5c175d-28ba-4aaa-a5d1-919997790746)
+   
+12. Results (in case of training over 50 epochs)
+   ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/f1a963ad-94d9-43ea-afa8-97bf86b83b24)
 
 
 ## Contributing
