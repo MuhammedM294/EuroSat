@@ -1,6 +1,7 @@
-# EuroSat
+# EuroSat: Land Use and Cover Classification with Deep Convolutional Neural Network
+
 ## Project Overview
-In this project, a deep Convolutional Neural Network (CNNs) is built with PyTorch to classify Land use and cover dataset from Sentinel-2 satellite images.
+This project aims to classify land use and cover datasets obtained from Sentinel-2 satellite images using a deep Convolutional Neural Network (CNN) implemented with PyTorch. Two different training approaches are employed: one utilizing transfer learning with the pre-trained VGG19 model, and the other constructing a CNN from scratch.
 
 
 ![](https://raw.githubusercontent.com/phelber/EuroSAT/master/eurosat_overview_small.jpg)
@@ -8,22 +9,26 @@ In this project, a deep Convolutional Neural Network (CNNs) is built with PyTorc
 ## Dataset
 [EuroSAT: Land Use and Land Cover Classification with Sentinel-2](https://github.com/phelber/eurosat)
 
-The dataset comprises 27,000 labeled and geo-referenced images, divided into 10 distinct classes. It is available in two versions: RGB and multi-spectral. The RGB version consists of images encoded in JPEG format, representing the optical Red, Green, and Blue (RGB) frequency bands. These images provide color information in the visible spectrum. The multi-spectral version of the dataset includes all 13 Sentinel-2 bands, which retains the original value range of the Sentinel-2 bands, enabling access to a more comprehensive set of spectral information.
+The dataset used in this project consists of Sentinel-2 satellite images labeled with corresponding land use and cover categories. It provides a comprehensive representation of various land features. The dataset comprises 27,000 labeled and geo-referenced images, divided into 10 distinct classes. It is available in two versions: RGB and multi-spectral. The RGB version consists of images encoded in JPEG format, representing the optical Red, Green, and Blue (RGB) frequency bands. These images provide color information in the visible spectrum. The multi-spectral version of the dataset includes all 13 Sentinel-2 bands, which retains the original value range of the Sentinel-2 bands, enabling access to a more comprehensive set of spectral information.
 
 1. [RGB](https://madm.dfki.de/files/sentinel/EuroSAT.zip) (**The employed one in this project**)
 2. [Multi-spectral](https://madm.dfki.de/files/sentinel/EuroSATallBands.zip)
 
-## Workflow
-##### 1. Import the relevant modules and libraries 
-##### 2. Define a custom dataset class for the satellite Images.
-##### 3. Builds a pre-trained VGG19 model with a custom classifier for image classification, select the Loss Function and the optimizer for training the model.
-##### 4. Build a function to performs a single training iteration on every batch of data, and other function to calculates the accuracy of the model's predictions on a batch of data.
-##### 5. Run a for training loop that runs for a specified number of epochs to iterate over the training and test dataset loaders, calculates the training loss, accuracy, and prints their values for each epoch.
-##### 6. Visualize the training and test loss values as well as the training and test accuracy values over increasing epochs.
 
 ## Training
-### The First Training
-The first training is performed using:
+### Training with Transfer Learning
+For transfer learning, I leveraged the pre-trained VGG19 model, which has been trained on a large-scale image dataset. By fine-tuning the model on our specific land use and cover dataset, I can take advantage of the knowledge and feature extraction capabilities learned by VGG19.
+
+To train the model using transfer learning, follow the steps below:
+
+1. Preprocess the dataset by resizing the images, normalizing pixel values, and splitting into training and validation sets.
+2. Load the pre-trained VGG19 model.
+3. Freeze the weights of the convolutional layers to prevent further training.
+4. Replace the classifier layer of VGG19 with a new fully connected layer tailored to the number of land use and cover categories in our dataset.
+5. Train the model on the training set while monitoring the validation performance.
+6. Evaluate the trained model on the test set and analyze the classification accuracy and other relevant metrics.
+
+#### Parameters
 1. Model : The Pretrained VGG19 Model 
 2. Loss Function:  Cross-Entropy 
 3. Optimizer: Adam
@@ -99,8 +104,18 @@ The first training is performed using:
      ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/9ad8985b-e28b-4534-811a-e17c0b098195)
      
 
-### The Second Training
-The second training is performed using:
+### Training from Scratch
+In addition to transfer learning, I also implement a CNN architecture from scratch to classify the land use and cover dataset. This approach allows the model to learn the relevant features directly from the images without relying on pre-trained weights.
+
+To train the CNN from scratch, follow these steps:
+1. Preprocess the dataset in the same manner as mentioned for transfer learning.
+2. Design a CNN architecture suitable for the task of land use and cover classification. Consider using convolutional layers, pooling layers, and fully connected layers.
+3. Initialize the model with random weights.
+4. Train the model on the training set while monitoring the validation performance.
+5. Evaluate the trained model on the test set and analyze the classification accuracy and other relevant metrics.
+
+#### Parameters
+
 1. Model:
 
             def conv_block(in_channels, out_channels, kernel_size=3, stride=1, padding=1):
