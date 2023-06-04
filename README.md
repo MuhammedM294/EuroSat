@@ -102,9 +102,9 @@ To train the model using transfer learning, follow the steps below:
                             
 10. Results 
 
-     **Train Accuracy: 99.54%**
+     '*Train Accuracy: 99.54%*'
      
-     **Test Accuracy: 89.88%**
+     '*Test Accuracy: 89.88%*'
      
      ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/9ad8985b-e28b-4534-811a-e17c0b098195)
      
@@ -205,17 +205,21 @@ To train the CNN from scratch, follow these steps:
 
 10. Results (in case of training over 25 epochs)
 
-   **Achieved Train Accuracy: 93.12%**
+   '*Achieved Train Accuracy: 93.12%*'
    
-   **Achieved Test Accuracy: 91.99%**
+   '*Achieved Test Accuracy: 91.99%*'
+   
+   **Trained with  NVIDIA GeForce GTX 1660 Ti."
    
    ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/af5c175d-28ba-4aaa-a5d1-919997790746)
    
 11. Results (in case of training over 50 epochs)
 
-   **Achieved Train Accuracy: 98.25%**
+   '*Achieved Train Accuracy: 98.25%*
    
-   **Achieved Test Accuracy: 96.39%**
+   '*Achieved Test Accuracy: 96.39%*'
+   
+   **Trained with  NVIDIA GeForce GTX 1660 Ti. It took around three hours, 12 minutes"
    
    ![image](https://github.com/MuhammedM294/EuroSat/assets/89984604/f1a963ad-94d9-43ea-afa8-97bf86b83b24)
 
