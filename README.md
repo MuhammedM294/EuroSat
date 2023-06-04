@@ -152,7 +152,7 @@ To train the CNN from scratch, follow these steps:
 3. Optimizer: Adam
 4. Learning Rate: 0.001
 5. Apply Dropout: True
-6. Number of training epochs: 25
+6. Number of training epochs: 25 and 50
 7. Traing Data Size: 22000
 8. Test Data Size: 5000
 9. Model Summary: 
