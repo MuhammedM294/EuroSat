@@ -33,11 +33,12 @@ To train the model using transfer learning, follow the steps below:
 2. Loss Function:  Cross-Entropy 
 3. Optimizer: Adam
 4. Learning Rate: 0.001
-5. Apply Dropout: True
-6. Number of training epochs: 25
-7. Traing Data Size: 22000
-8. Test Data Size: 5000
-9. Model Summary: 
+5. Batch Normalization: True
+6. Apply Dropout: True
+7. Number of training epochs: 25
+8. Traing Data Size: 22000
+9. Test Data Size: 5000
+10. Model Summary: 
 
             Layer (type:depth-idx)                   Output Shape              Param 
             ==========================================================================================
@@ -151,11 +152,12 @@ To train the CNN from scratch, follow these steps:
 2. Loss Function:  Cross-Entropy 
 3. Optimizer: Adam
 4. Learning Rate: 0.001
-5. Apply Dropout: True
-6. Number of training epochs: 25 and 50
-7. Traing Data Size: 22000
-8. Test Data Size: 5000
-9. Model Summary: 
+5. Batch Normalization: True
+6. Apply Dropout: True
+7. Number of training epochs: 25 and 50
+8. Traing Data Size: 22000
+9. Test Data Size: 5000
+10. Model Summary: 
 
 
             ==========================================================================================
